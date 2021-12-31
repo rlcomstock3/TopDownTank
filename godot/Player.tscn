@@ -32,7 +32,6 @@ position = Vector2( 0, 300 )
 texture = ExtResource( 3 )
 
 [node name="Turret" type="Sprite" parent="Sprite/TankBody"]
-scale = Vector2( 1, 1 )
 texture = ExtResource( 2 )
 offset = Vector2( 217, 0 )
 flip_h = true
