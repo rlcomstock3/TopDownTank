@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 export (int) var speed = 150
 export (float) var rotation_speed = 1.5
-export (int) var bullet_speed = 300
+export (int) var bullet_speed = 800
 
 var velocity = Vector2()
 var rotation_dir = 0
