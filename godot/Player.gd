@@ -37,6 +37,10 @@ func _physics_process(delta):
 		$TankTurningSound.stop()
 	else:
 		if not $TankTurningSound.playing:
+			if velocity == Vector2(0,0):
+				$TankTurningSound.volume_db = -20
+			else:
+				$TankTurningSound.volume_db = -17
 			$TankTurningSound.play()
 		
 	velocity = move_and_slide(velocity)
@@ -45,10 +49,6 @@ func _physics_process(delta):
 		$TankStartupSound.stop()
 		if not $TankStopSound.playing:
 			$TankStopSound.play()
-		#if $TankDriveStart.playing:
-		#	$TankDriveStart.stop()
-		#if $TankDriveSteady.playing:
-		#	$TankDriveSteady.stop()
 	else:
 		if not ($TankStartupSound.playing or $TankSteadySound.playing):
 			$TankStopSound.stop()
