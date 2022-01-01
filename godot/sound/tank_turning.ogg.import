@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tank_turning.ogg-8e14390a42e5b7f2b4049ea8262beb5c.oggstr"
+
+[deps]
+
+source_file="res://sound/tank_turning.ogg"
+dest_files=[ "res://.import/tank_turning.ogg-8e14390a42e5b7f2b4049ea8262beb5c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
